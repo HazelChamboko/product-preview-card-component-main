@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Frontend Mentor | Product preview card component</title>
+
+        <style>
+            :root {
+                --primary-font: Montserrat;
+                --secondary-font: Fraunces;
+            }
+
+            body {
+                background-color: hsl(30, 38%, 92%);
+                display: flex;
+                flex-direction: column;
+                min-height: 100dvh;
+                align-items: center;
+                justify-content: center;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border-radius: 1.5dvh;
+                padding-right: 2.5dvh;
+            }
+
+            .product-img {
+                width: 40dvh;
+                height: 60dvh;
+                border-top-left-radius: 1.5dvh;
+                border-bottom-left-radius: 1.5dvh;
+            }
+
+            .wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .text {
+                padding-left: 3.5dvh;
+            }
+            .first-word {
+                font-family: Montserrat;
+                letter-spacing: 1dvh;
+                font-size: 2dvh;
+            }
+            .product-name {
+                font-family: Fraunces;
+                font-size: 4dvh;
+            }
+            .description {
+                font-family: Montserrat;
+                font-size: 2dvh;
+                min-height: 0.5dvh;
+            }
+            .curr-price {
+                font-family: Fraunces;
+                font-size: 4dvh;
+                margin: 0;
+                font-weight: bolder;
+            }
+            .old-price {
+                font-family: Montserrat;
+                font-size: 2dvh;
+                text-decoration: line-through;
+            }
+            .price-group {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            button {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 2dvh;
+                width: 90%;
+                background-color: hsl(158, 36%, 37%);
+                border: solid;
+                border-color: hsl(158, 36%, 37%);
+                color: white;
+                border-radius: 0.25rem;
+                padding-top: 1dvh;
+                padding-bottom: 1dvh;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.25rem;
+            }
+            .cart {
+                min-width: none;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <section class="wrapper">
+                <img
+                    class="product-img"
+                    src="images/image-product-desktop.jpg"
+                />
+                <div class="text">
+                    <p class="first-word">PERFUME</p>
+                    <h1 class="product-name">
+                        Gabrielle <br />
+                        Essence Eau<br />
+                        De Parfum
+                    </h1>
+                    <p class="description">
+                        A floral, solar and voluptuous <br />
+                        interpretation composed by <br />
+                        Olivier Polge, Perfumer-Creator <br />for the House of
+                        CHANEL.
+                    </p>
+                    <div class="price-group">
+                        <p class="curr-price">$149.99</p>
+                        <p class="old-price">$169.99</p>
+                    </div>
+                    <button>
+                        <img class="cart" src="images/icon-cart.svg" />
+                        Add to Cart
+                    </button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
